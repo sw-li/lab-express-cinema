@@ -1,11 +1,24 @@
+<style>
+  p{
+  font-size: 0.8rem;
+}
+</style>
 
-<h1>Ironhack Cinema</h1>
-<h2>Click On The Movie To Check The Showtimes!</h2>
-
-{{#each result}}
-  <div class="d-flex flex-wrap">
-    <img src="{{image}}" alt="movie image" />
-    <h3>{{title}}</h3>
-    <a href="/movie/{{_id}}">See More</a>
+<div class="d-flex flex-column">
+  <div class="mx-5 mt-5 px-5">
+    <h1>Ironhack Cinema</h1>
+    <h2>Click On The Movie To Check The Showtimes!</h2>
   </div>
-{{/each}}
+
+  <div class="d-flex m-5 justify-content-around flex-row flex-wrap">
+    {{#each result}}
+    <div class="d-flex flex-column align-items-center p-4">
+      <div class="imgContainer text-center" style="width:215px;">
+        <img src="{{image}}" alt="movie image" class="align-self-center"/>
+      </div>
+      <h6 class="m-0">{{title}}</h6>
+      <a href="/movie/{{_id}}">See More</a>
+    </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,11 +1,24 @@
 {{!-- <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p> --}}
+<style>
+    body {
+        padding: 50px;
+        font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+        background: url("/images/cinema.jpg") no-repeat fixed center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h1{
+        font-size: 4rem;
+    }
+</style>
 
-
-<section>
+<section class="w-75 h-75 d-flex flex-column align-items-end mt-5">
     <div>
-        <h1>Cinema</h1>
-        <h1>Ironhack</h1>
-        <a href="/movies"><button class="btn btn-success">Check the movies!</button></a>
+        <h1 class="text-white">Cinema</h1>
+        <h1 class="text-white">Ironhack</h1>
+        <a href="/movies"><button class="btn btn-success rounded-pill">Check the movies!</button></a>
     </div>
 </section>
