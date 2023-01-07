@@ -1,13 +1,13 @@
-/* body {
-  padding: 50px;
+body {
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url("/images/cinema.jpg") no-repeat fixed center;
+  /* background: url("/images/cinema.jpg") no-repeat fixed center;
   background-size: cover;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
- */
+
 a {
   color: #00B7FF;
 }

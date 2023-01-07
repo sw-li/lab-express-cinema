@@ -1,18 +1,33 @@
+<div class="d-flex flex-column text-start">
+    <br>
+    <div class="row">
+        <div class="col-2">
+            <img src="{{image}}" class="img-thumbnail" alt="movie image">
+        </div>
 
 
-<img src="{{image}}" alt="movie image">
 
-<a href="/movies">Go back</a>
-<h1>{{title}}</h1>
-<h2> {{director}} </h2>
-<h3>Stars: </h3>
-{{#each stars}}
-    <ul>{{this}}</ul>
-{{/each}}
-</p>
-<h3> {{description}} </h3>
-<h3> 
-    {{#each showtimes}}
-        {{this}} |
-    {{/each}}
-</h3>
+        <div class="col-8">
+            <a href="/movies" class="fs-6">Go back</a>
+            <p class="fs-4 fw-bold">{{title}}</p>
+            <p class="fs-5 fw-bold"> {{director}} </p>
+            <p class="fs-5 fw-bold">Stars </p>
+            {{#each stars}}
+            <ul class="lh-1">
+                <li>{{this}}</li>
+            </ul>
+
+            {{/each}}
+            </p>
+            <p class="lh-1"> {{description}} </p>
+            <p>
+                {{#each showtimes}}
+                {{this}} |
+                {{/each}}
+            </p>
+        </div>
+    </div>
+
+
+
+</div>
